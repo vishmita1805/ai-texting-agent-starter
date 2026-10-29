@@ -1,0 +1,32 @@
+{
+  "name": "ai-texting-agent-starter",
+  "version": "0.1.0",
+  "description": "Text an AI agent. A starter kit that connects an LLM to SMS and RCS through a messaging API webhook.",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js",
+    "test": "vitest run",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "keywords": ["sms", "rcs", "llm", "ai-agent", "twilio", "openai", "webhooks"],
+  "license": "MIT",
+  "engines": { "node": ">=18" },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "openai": "^4.67.0",
+    "twilio": "^5.3.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.7.5",
+    "@types/supertest": "^6.0.2",
+    "supertest": "^7.0.0",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.3"
+  }
+}
